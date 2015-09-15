@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using CryptorEngine;
 
 namespace PXEN
 {
@@ -26,7 +27,7 @@ namespace PXEN
             {
                 error.Clear();
                 string clearText = txtClearText.Text.Trim();
-                string cipherText = CryptorEngine.Encrypt(clearText, vars.user2, true);
+                string cipherText = CryptorEngine.CryptorEngine.Encrypt(clearText, vars.user2, true);
                 txtCipherText.Text = cipherText;
                 btnDecrypt.Enabled = true;
             }
@@ -35,7 +36,7 @@ namespace PXEN
         private void btnDecrypt_Click(object sender, EventArgs e)
         {
             string clearText = txtClearText.Text.Trim();
-            string decryptedText = CryptorEngine.Decrypt(clearText, vars.user2 , true);
+            string decryptedText = CryptorEngine.CryptorEngine.Decrypt(clearText, vars.user2, true);
             txtDecryptedText.Text = decryptedText;
         }
 

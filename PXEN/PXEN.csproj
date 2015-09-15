@@ -33,7 +33,7 @@
     <PublisherName>Prianx Studios</PublisherName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -70,7 +70,8 @@
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>PXEN_Licence.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>60F9B8641E05FEAF087CA12E94D4CF084DD06037</ManifestCertificateThumbprint>
@@ -148,7 +149,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="PXEN_Licence.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -174,7 +174,6 @@
     <None Include="Resources\help.png" />
     <None Include="Resources\PXEN.png" />
     <None Include="Resources\PXEN.ico" />
-    <None Include="PXEN_TemporaryKey.pfx" />
     <None Include="Resources\del_user.png" />
     <None Include="Resources\add_user.png" />
   </ItemGroup>
